@@ -1,0 +1,25 @@
+nav{
+    background: #2D2E2E;
+    height: 100%;
+}
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+
+    li{
+      
+        a{
+            font-size: 1.5em;
+            text-decoration: none;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .activated{
+            background: #00A8FF;
+        }
+    }
+
+}
