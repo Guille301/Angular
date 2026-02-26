@@ -1,26 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
-import { filter } from 'rxjs/operators';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
+  imports: [RouterLink],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.scss'
+  styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
 
-  currentUrl: string = '';
-
-  constructor(private router: Router) {}
+  constructor() {}
 
   ngOnInit() {
-    this.router.events
-      .pipe(
-        filter((event): event is NavigationEnd => event instanceof NavigationEnd)
-      )
-      .subscribe(event => {
-        this.currentUrl = event.url;
-      });
+   
   }
 }

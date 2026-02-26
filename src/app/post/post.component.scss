@@ -1,0 +1,55 @@
+:host {
+  display: block;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2D2E2E;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+li {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #00A8FF;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+li a {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #00A8FF;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.2s ease;
+}
+
+li a:hover {
+  color: #007acc;
+}
+
+li p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
