@@ -24,10 +24,8 @@ export class DetailsComponent implements OnInit {
 
   ngOnInit(): void {
 
-    // 1️⃣ Obtener el id de la URL
     this.userId = Number(this.route.snapshot.paramMap.get('id'));
 
-    // 2️⃣ Llamar al servicio con ese id
     this.dataService.getUser(this.userId).subscribe(data => {
       this.user = data;
     });
