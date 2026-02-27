@@ -1,15 +1,39 @@
 <h1>Users</h1>
 
 <ul>
-    <li *ngFor="let user of users$">
-        <a routerLink="/details/{{user.id}}">{{ user.name }}</a>
+<li *ngFor="let user of users" class="user-card">
+
+  <div class="user-header">
+    <div class="avatar">
+      {{ user.name.charAt(0) }}
+    </div>
+
+    <div class="user-info">
+      <a class="username" [routerLink]="['/details', user.id]">
+        {{ user.name }}
+      </a>
+
+      <span class="email">{{ user.email }}</span>
+
+      <a class="website" href="https://{{ user.website }}" target="_blank">
+        {{ user.website }}
+      </a>
+    </div>
+  </div>
     
-        <ul>
-            <li>Email: {{ user.email }}</li>
-            <li><a href="https://{{ user.website }}">{{ user.website }}</a></li>
-        </ul>    
-    
-    
+        <div class="albums-wrapper" *ngIf="albumsMap[user.id]">
+            <button class="scroll-btn left" (click)="scrollLeft(user.id)">‹</button>
+
+            <div class="albums-container" #albumContainer [attr.data-user]="user.id">
+                <div class="album-card" *ngFor="let album of albumsMap[user.id]">
+                    <a [routerLink]="['/albums', album.id]">
+                        {{ album.title }}
+                    </a>
+                </div>
+            </div>
+
+            <button class="scroll-btn right" (click)="scrollRight(user.id)">›</button>
+        </div>
     </li>
 </ul>
 

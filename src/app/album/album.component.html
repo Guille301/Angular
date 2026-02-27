@@ -1,0 +1,7 @@
+<h1>Album {{ albumId }}</h1>
+
+<div class="gallery">
+  <div class="photo-card" *ngFor="let photo of photos">
+  <img src="/no-image.png" [alt]="photo.title">  <p>{{ photo.title }}</p>
+  </div>
+</div>

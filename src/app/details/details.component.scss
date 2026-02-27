@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2D2E2E;
+  font-weight: 600;
+}
+
+/* ===== DETAILS CARD ===== */
+
+.details-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 700px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+
+.details-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+/* Avatar grande */
+
+.details-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00A8FF, #007acc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: white;
+  flex-shrink: 0;
+}
+
+/* Nombre */
+
+.details-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+  color: #2D2E2E;
+}
+
+/* Website */
+
+.details-website {
+  font-size: 1rem;
+  color: #00A8FF;
+  text-decoration: none;
+}
+
+.details-website:hover {
+  text-decoration: underline;
+}
+
+/* Info section */
+
+.details-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cada fila de dato */
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.value {
+  font-size: 1.1rem;
+  color: #2D2E2E;
+  font-weight: 500;
+}
