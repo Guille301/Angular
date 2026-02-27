@@ -1,16 +1,16 @@
 <h1>User Details</h1>
-
-<div *ngIf="user$" class="details-card">
+<app-back-button></app-back-button>
+<div *ngIf="user" class="details-card">
 
   <div class="details-header">
     <div class="details-avatar">
-      {{ user$.name.charAt(0) }}
+      {{ user.name.charAt(0) }}
     </div>
 
     <div class="details-main">
-      <h2 class="details-name">{{ user$.name }}</h2>
-      <a class="details-website" href="https://{{ user$.website }}" target="_blank">
-        {{ user$.website }}
+      <h2 class="details-name">{{ user.name }}</h2>
+      <a class="details-website" href="https://{{ user.website }}" target="_blank">
+        {{ user.website }}
       </a>
     </div>
   </div>
@@ -18,12 +18,12 @@
   <div class="details-info">
     <div class="info-item">
       <span class="label">Email</span>
-      <span class="value">{{ user$.email }}</span>
+      <span class="value">{{ user.email }}</span>
     </div>
 
     <div class="info-item">
       <span class="label">Phone</span>
-      <span class="value">{{ user$.phone }}</span>
+      <span class="value">{{ user.phone }}</span>
     </div>
   </div>
 

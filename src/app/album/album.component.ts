@@ -3,12 +3,13 @@ import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { DataService } from '../data.service';
 import { Photo } from './photo.model';
-import { Album } from './album.model';
+import { BackButtonComponent } from '../../shared/back-button/back-button.component';
+
 
 @Component({
   selector: 'app-album',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, BackButtonComponent],
   templateUrl: './album.component.html',
   styleUrl: './album.component.scss'
 })

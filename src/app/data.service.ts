@@ -19,7 +19,7 @@ export class DataService {
   }
   
   getUser(id: number) {
-    return this.http.get(`https://jsonplaceholder.typicode.com/users/`+id);
+    return this.http.get<User>(`https://jsonplaceholder.typicode.com/users/${id}`);
   }
 
   getPosts(limit: number = 10) {

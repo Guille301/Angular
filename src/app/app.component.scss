@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+app-header {
+  flex: 0 0 auto;
+}
+
+.layout {
+  display: flex;
+  flex: 1;
+}
+
+app-sidebar {
+  width: 5%;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+  background: #f8f9fb;
+}

@@ -9,8 +9,6 @@ h1 {
   font-weight: 600;
 }
 
-/* ===== DETAILS CARD ===== */
-
 .details-card {
   background: #ffffff;
   border-radius: 20px;
@@ -19,16 +17,12 @@ h1 {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Header */
-
 .details-header {
   display: flex;
   align-items: center;
   gap: 25px;
   margin-bottom: 35px;
 }
-
-/* Avatar grande */
 
 .details-avatar {
   width: 90px;
@@ -44,16 +38,12 @@ h1 {
   flex-shrink: 0;
 }
 
-/* Nombre */
-
 .details-name {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 0 0 6px 0;
   color: #2D2E2E;
 }
-
-/* Website */
 
 .details-website {
   font-size: 1rem;
@@ -65,15 +55,11 @@ h1 {
   text-decoration: underline;
 }
 
-/* Info section */
-
 .details-info {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
-/* Cada fila de dato */
 
 .info-item {
   display: flex;
